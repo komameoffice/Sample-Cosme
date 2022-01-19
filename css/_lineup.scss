@@ -1,0 +1,252 @@
+//
+// LINEUPのスタイル
+//
+.lineup {
+    margin-bottom: 9rem;
+    @media (min-width: 901px){
+        margin-bottom: 8rem;
+    }
+    @media (min-width: 901px){
+        padding: 0 10%;
+        margin-bottom: 16rem;
+    }
+
+    .product-item {
+        margin-bottom: 7rem;
+        background-color: $white;
+        @media (min-width: 460px) and (max-width: 900px) {
+            display: block;
+            width: 100%;
+            padding: 6rem 0;
+            margin-bottom: 5rem;
+        }
+        @media (min-width: 901px){
+            padding: 5.5rem 0;
+            width: 95%;
+            margin-bottom: 4rem;
+            &:nth-child(2n + 1) {
+                margin: 0 0 4rem auto;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        .alternate-title {
+            @media (min-width: 460px) and (max-width: 900px) {
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+
+        .product-img-container {
+            margin: 5rem -5% 0;
+            width: 100vw;
+            height: 20rem;
+            .product-img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+
+        .alternate-img {
+            @media (min-width: 460px) and (max-width: 900px) {
+                right: 7%;
+                left: auto;
+            }
+        }
+
+        .text-area {
+            position: relative;
+            @include flex(center, center, column);
+
+            .product-title {
+                display: inline-block;
+                font-family: 'adobe-handwriting-ernie', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 5rem;
+                color: $pink;
+                opacity: .4;
+                line-height: 1;
+                margin: 0;
+                position: absolute;
+                top: -25rem;
+                left: -2%;
+                transform: rotate(-15deg);
+            }
+
+            .grape-title {
+                left: -1%;
+            }
+
+            .product-text, .price {
+                width: 100%;
+            }
+
+            .product-text {
+                margin: 2.5rem 0;
+            }
+
+            .price {
+                font-size: 1.4rem;
+                margin: 0;
+            }
+
+            .purchase-button {
+                width: 100%;
+                height: 6.8rem;
+                margin: 3rem 0 5rem;
+                border-radius: 2px;
+                box-sizing: border-box;
+                position: relative;
+                background: linear-gradient(to right, $pink, $blue);
+
+                .button-inner {
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: calc(100% - 4px);
+                    height: calc(100% - 4px);
+                    border-radius: 2px;
+                    background: $white;
+                    box-sizing: border-box;
+                    @include flex(center, center, row);
+                    transition: all .5s;
+                    &:hover {
+                        background: rgba(255, 255, 255, 0);
+                        color: $white;
+
+                        p, p span {
+                            background: transparent;
+                            color: $white;
+                            -webkit-text-fill-color: inherit;
+                        }
+                    }
+
+                    p, p span {
+                        color: $blue;
+                        background: linear-gradient(to right, $pink, $blue);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+        
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+        
+                        span {
+                            font-family: 'HGS明朝B', serif;
+                            font-size: 2.4rem;
+                            line-height: 0;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .responsive-container {
+            @media (min-width: 460px) {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .product-title {
+                    top: -20%;
+                    left: -6%;
+                    @media (min-width: 901px) {
+                        top: -20%;
+                        left: -8%;
+                    }
+                }
+
+                .grape-title {
+                    @media (min-width: 460px) and (max-width: 1600px) {
+                        top: -23%;
+                        left: -6%;
+                    }
+                    @media (min-width: 1601px) {
+                        top: -30%;
+                        left: -8%;
+                    }
+                }
+
+                .product-img-container {
+                    width: 50%;
+                    height: 40rem;
+                    margin: 0 4rem 0 -5%;
+                    @media (min-width: 901px) and (max-width: 1600px) {
+                        width: 60%;
+                        height: 40rem;
+                        margin: 0 4rem 0 -20%;
+                    }
+                    @media (min-width: 1601px) {
+                        margin: 0 10rem 0 -20%;
+                    }
+
+                    .product-img {
+                        border-radius: 0 2px 2px 0;
+                        @media (min-width: 901px) {
+                            border-radius: 2px;
+                        }
+                    }
+                }
+
+                .text-area {
+                    width: 50%;
+                    max-width: 600px;
+
+                    .product-text {
+                        margin: 0 0 4rem 0;
+                    }
+
+                    .purchase-button {
+                        margin: 4rem 0 0 0;
+                    }
+                }
+            }
+            @media (min-width: 901px) {
+                justify-content: center;
+            }
+            
+            
+        }
+
+        // タブレット・PC用
+        .alternate {
+            @media (min-width: 460px) {
+                flex-direction: row-reverse;
+
+                .product-title {
+                    left: 2%;
+
+                    @media (min-width: 460px) and (max-width: 900px) {
+                        left: -4%;
+                    }
+                    @media (min-width: 901px) {
+                        left: -8%;
+                    }
+                }
+
+                
+
+                .product-img-container {
+                    margin: 0 -5% 0 4rem;
+                    @media (min-width: 901px) and (max-width: 1600px) {
+                        margin: 0 -20% 0 4rem;
+                    }
+                    @media (min-width: 1601px) {
+                        margin: 0 -20% 0 10rem;
+                    }
+
+                    .product-img {
+                        border-radius: 2px 0 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}

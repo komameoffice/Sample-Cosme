@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Cosme</title>
+    <meta name="description" content="Sample Cosmeから夏のクレンジングバームが新登場！ご購入はコチラかから。">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ddd954adac.js" crossorigin="anonymous"></script>
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/yuh4dnc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cbg0etj.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'vkf3vlb',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <!-- ヘッダー-->
+    <header class="header">
+        <div class="container">
+            <h1><a href="index.html" class="logo">Sample Cosme</a></h1>
+            <div id="js-hamburger-trigger" class="hamburger">
+                <div class="hamburger-icon">
+                    <span></span>
+                </div>
+                <nav class="hamburger-menu">
+                    <div class="menu-inner">
+                        <ul class="menu-lists">
+                            <li class="page-link"><a href="#lineup">Lineup</a></li>
+                            <li class="page-link"><a href="#how-to-use">How To Use</a></li>
+                            <li class="page-link"><a href="#qa">Q＆A</a></li>
+                        </ul>
+                        <a href="#" class="online-store gray-link page-link">
+                            <p>ONLINE STORE</p>
+                        </a>
+                    </div>
+                </nav>
+                <div id="mask"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メイン -->
+    <main>
+        <!-- カバー -->
+        <section id="cover" class="cover">
+            <ul class="carousel">
+                <li>
+                    <div class="carousel-1"></div>
+                </li>
+                <li>
+                    <div class="carousel-2"></div>
+                </li>
+            </ul>
+            <div class="catch">
+                <ul class="catch-copy">
+                    <li>Sample</li>
+                    <li class="cleansing">Cleansing</li>
+                    <li class="balm">Balm</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- information -->
+        <section class="information">
+            <div class="main-info">
+                <div class="container">
+                    <div class="info-title">
+                        <p class="summer">夏用</p>
+                        <h2>クレンジングバーム<br>新登場</h2>
+                    </div>
+                    <div class="description">
+                        <p>Sample Cosmeからバームタイプのメイク落としが新登場。 </br></br>
+                            肌に乗せると体温でとろけ、メイクをじゅわっと浮かせます。</br></br>
+                            天然由来の美容成分を11種類配合し、夏のデリケートなお肌を優しくケア。</br></br>
+                            肌質に合わせて、４つのタイプからお選びいただけます。
+                        </p>
+                        <small>（※アルコールフリー・パラベンフリー・合成香料不使用・パッチテスト済）</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="container">
+                    <div class="product-list">
+                        <ul>
+                            <li>ピーチ</li>
+                            <li>マスカット</li>
+                            <li>グレープフルーツ</li>
+                            <li>ココナッツ</li>
+                        </ul>
+                        <p>各100g / 1,100円（税込）</p>
+                    </div>
+                    <a href="#" class="online-store fadeInTrigger">
+                        <p>ONLINE STORE</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- selling point -->
+        <section class="selling-point">
+            <img class="point-1" src="./images/point/point1-min.jpg" alt="point1">
+            <ul class="point-lists fadeInTrigger">
+                <li>肌に優しい成分を配合</li>
+                <li>肌質に合わせて選べる４type</li>
+                <li>Ｗ洗顔不要</li>
+            </ul>
+            <img class="point-2" src="./images/point/point2-min.jpg" alt="point2">
+        </section>
+
+        <!-- LINEUP​-->
+        <section id="lineup" class="lineup anchor">
+            <div class="product-item fadeInTrigger">
+                <div class="container responsive-container">
+                    <div class="product-img-container">
+                        <img class="product-img" src="./images/lineup/peach-min.jpg" alt="peach">
+                    </div>
+                    <div class="text-area">
+                        <p class="product-title">Peach</p>
+                        <p class="product-text">ダメージを受けやすい夏のお肌をやさしく洗い上げ、透明感のある肌へ。<br>美容成分をたっぷり配合し、敏感肌の方も安心してお使いいただけます。
+                        </p>
+                        <p class="price">ピーチ (100g) / 1,100円（税込）</p>
+                        <a href="#" class="purchase-button">
+                            <div class="button-inner">
+                                <p>オンラインストアで購入<span>&rarr;</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item fadeInTrigger">
+                <div class="container responsive-container alternate">
+                    <div class="product-img-container">
+                        <img class="product-img alternate-img" src="./images/lineup/muscat-min.jpg" alt="muscat">
+                    </div>
+                    <div class="text-area">
+                        <p class="product-title alternate-title">Muscat</p>
+                        <p class="product-text">お肌に優しいこんにゃくスクラブで古い角質やくすみを取り除きます。<br>洗うたびにつるんとしたうっとり肌へ。
+                        </p>
+                        <p class="price">マスカット (100g) / 1,100円（税込）</p>
+                        <a href="#" class="purchase-button">
+                            <div class="button-inner">
+                                <p>オンラインストアで購入<span>&rarr;</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item fadeInTrigger">
+                <div class="container responsive-container">
+                    <div class="product-img-container">
+                        <img class="product-img" src="./images/lineup/grapefruit-min.jpg" alt="grapefruit">
+                    </div>
+                    <div class="text-area">
+                        <p class="product-title grape-title">Grapefruit</p>
+                        <p class="product-text">ウォータープルーフのマスカラや、日焼け止めもしっかり落とします。<br>毛穴の奥の汚れに働きかけ、くすみのないクリアな肌へ。
+                        </p>
+                        <p class="price">グレープフルーツ (100g ) / 1,100円（税込）</p>
+                        <a href="#" class="purchase-button">
+                            <div class="button-inner">
+                                <p>オンラインストアで購入<span>&rarr;</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item fadeInTrigger">
+                <div class="container responsive-container alternate">
+                    <div class="product-img-container">
+                        <img class="product-img alternate-img" src="./images/lineup/coconut-min.jpg" alt="coconut">
+                    </div>
+                    <div class="text-area">
+                        <p class="product-title alternate-title">Coconut</p>
+                        <p class="product-text">天然ココナッツエキス・シアバターを贅沢に配合。<br>メイクをしっかり落としながら、クレンジング後の潤いをキープします。
+                        </p>
+                        <p class="price">ココナッツ (100g) / 1,100円（税込）</p>
+                        <a href="#" class="purchase-button">
+                            <div class="button-inner">
+                                <p>オンラインストアで購入<span>&rarr;</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How To Use -->
+        <section id="how-to-use" class="how-to-use anchor">
+            <div class="how-to-use-container">
+                <h3 class="section-title how-to-title">How To Use</h3>
+                <div class="container">
+                    <div class="img-use fadeInTrigger">
+                        <img src="./images/carousel/carousel_use-min.jpg" alt="how-to-use">
+                    </div>
+                    <ul class="use-step">
+                        <li class="step-item">
+                            <div class="step-number">
+                                1
+                            </div>
+                            <p>乾いた手のひらに適量を取り、体温で人肌に温めます。</p>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">
+                                2
+                            </div>
+                            <p>バームが柔らかくなったら顔に乗せ、くるくるとなじませてメイクを浮かせます。</p>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">
+                                3
+                            </div>
+                            <p>ぬるま湯で洗い流します。</p>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">
+                                4
+                            </div>
+                            <p>タオルで水気をふき取り、普段通りの保湿を行ってください。<br>（Ｗ洗顔不要です。）​
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Q＆A -->
+        <section id="qa" class="qa anchor">
+            <h3 class="section-title">Q＆A<span class="qa-sub">よくあるご質問</span></h3>
+            <div class="container">
+                <div class="qa-item js-qa fadeInTrigger">
+                    <div class="question">
+                        <p class="q-num">Q1.</p>
+                        <p class="q-text">手や顔が濡れていても使用できますか？</p>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p class="a-num">A1.</p>
+                            <p>濡れた状態で使用すると、クレンジング効果が落ちてしまうので、乾いた状態でお使いください。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-item js-qa fadeInTrigger">
+                    <div class="question">
+                        <p class="q-num">Q2.</p>
+                        <p class="q-text">まつ毛エクステをしていても大丈夫ですか？</p>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p class="a-num">A2.</p>
+                            <p>一般的なグルー（シアノアクリレート系の成分）であればお使いいただけます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-item js-qa fadeInTrigger">
+                    <div class="question">
+                        <p class="q-num">Q3.</p>
+                        <p class="q-text">1回の使用量はどのくらいですか？</p>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p class="a-num">A3.</p>
+                            <p>さくらんぼ大の大きさが目安となります。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-item js-qa fadeInTrigger">
+                    <div class="question">
+                        <p class="q-num">Q4.</p>
+                        <p class="q-text">お風呂場で保管してもよいですか？</p>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p class="a-num">A4.</p>
+                            <p>容器に水が入ると品質が変化してしまう原因になりますので、お風呂場での保管はお勧めしません。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="store-info">
+            <hr>
+            <div class="container footer-container">
+                <div class="store-wrapper">
+                    <h4 class="footer-logo"><a href="#">Sample Cosme</a></h4>
+                    <p class="store-text">オンラインストア限定商品を含め、<br class="break">様々なコスメを扱っています。</p>
+                    <a href="#" class="online-store gray-link fadeInTrigger">
+                        <p>ONLINE STORE</p>
+                    </a>
+                </div>
+                <ul class="sns">
+                    <li><a href="#"><i class="fab fa-twitter" aria-label="twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-instagram"
+                                aria-label="instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="credit">
+            <p>&copy;Sample Cosme Shop</p>
+        </div>
+    </footer>
+
+    <!-- TOPへ戻るボタン -->
+    <div id="page-top" class="page-top">
+        <a href="#"></a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/animattion.js"></script>
+    <script src="./js/qa.js"></script>
+    <script src="./js/page-top.js"></script>
+</body>
+
+</html>

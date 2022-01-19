@@ -1,0 +1,110 @@
+//
+// Q&Aのスタイル
+//
+.qa {
+    margin-bottom: 7rem;
+    @media (min-width: 460px) and (max-width: 900px) {
+        margin-bottom: 10rem;
+    }
+    @media (min-width: 901px) {
+        margin-bottom: 17rem;
+    }
+
+    .qa-sub {
+        font-size: 1.4rem;
+        margin-left: 1.2rem;
+    }
+
+
+    .qa-item {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        cursor: pointer;
+        @media (min-width: 460px) and (max-width: 900px) {
+            margin-bottom: 2.5rem;
+        }
+        @media (min-width: 901px) {
+            margin-bottom: 2rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .question, .answer-inner {
+            @include flex(center, flex-start, row);
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            @media (min-width: 460px) and (max-width: 900px) {
+                font-size: 1.6rem;
+                padding: 2.5rem;
+            }
+        }
+
+        .question {
+            background-color: $white;
+            height: 7.5rem;
+            @media (min-width: 460px) and (max-width: 900px) {
+                height: 8rem;
+            }
+            @media (min-width: 901px) {
+                padding: 3rem;
+                height: 8rem;
+            }
+        }
+
+        .answer-inner {
+            color: $gray;
+            @media (min-width: 901px) {
+                padding: 3rem;
+            }
+        }
+
+        .q-num, .a-num {
+            font-family: 'adobe-handwriting-ernie', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-right: 1.2rem;
+            @media (min-width: 460px) and (max-width: 900px) {
+                margin-right: 2rem;
+            }
+            @media (min-width: 901px) {
+                margin-right: 4rem;
+            }
+        }
+
+        .q-text, .q-open {
+            position: relative;
+            &:before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: .8rem;
+                height: .8rem;
+                border: solid $black;
+                border-width: 0 1px 1px 0;
+                transform: translate(-50%, -60%) rotate(45deg);
+                opacity: .8;
+            }
+        }
+
+        .q-text {
+            flex: 1;
+            padding-right: 3rem;
+        }
+
+        .q-open {
+            &:before {
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
+    }
+}

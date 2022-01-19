@@ -1,0 +1,16 @@
+// 文字コード
+@charset "UTF-8";
+
+// GoogleFontsの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+// Scssファイルの読み込み
+@import "base";
+@import "header";
+@import "cover";
+@import "information";
+@import "selling-point";
+@import "lineup";
+@import "how_to_use";
+@import "qa";
+@import "footer";

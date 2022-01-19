@@ -1,0 +1,105 @@
+//
+// How To Useのスタイル
+//
+.how-to-use {
+    position: relative;
+    width: 100%;
+    margin-bottom: 7rem;
+    @media (min-width: 901px){
+        margin-bottom: 14rem;
+   }
+
+    .how-to-use-container {
+        width: 95%;
+        margin: 0 auto 0 0;
+        padding: 5rem 0;
+        background-color: $white;
+        position: relative;
+    
+        .how-to-title {
+            position: absolute;
+            top: -2%;
+            left: 0;
+            right: 0;
+        }
+        
+        .img-use {
+            width: 100%;
+            height: 15rem;
+            position: absolute;
+            top: 5rem;
+            right: -5%;
+            @media (min-width: 460px) and (max-width: 900px){
+                 height: 23rem;
+            }
+            @media (min-width: 901px) and (max-width: 1600px) {
+                 height: 26rem;
+            }
+            @media (min-width: 1601px) and (max-width: 2000px) {
+                height: 30rem;
+            }
+            @media (min-width: 2001px) {
+                width: 1900px;
+                height: 50rem;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2px 0 0 2px;
+                object-position: 10% 75%;
+            }
+        }
+    
+        .use-step {
+            margin-top: 18rem;
+            @media (min-width: 460px) and (max-width: 900px){
+                margin-top: 26rem;
+           }
+            @media (min-width: 901px) and (max-width: 1600px) {
+                margin-top: 30rem;
+            }
+            @media (min-width: 1601px) and (max-width: 2000px) {
+                margin-top: 34rem;
+            }
+            @media (min-width: 2001px) {
+                margin-top: 54rem;
+            }
+    
+            .step-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 3rem;
+                @media (min-width: 901px){
+                    margin-bottom: 3.5rem;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+    
+                .step-number {
+                    @include flex(center, center, row);
+                    width: 4rem;
+                    height: 4rem;
+                    margin-right: 1.5rem;
+                    border-radius: 50%;
+                    background: $purple;
+                    color: $white;
+                    @media (min-width: 460px) and (max-width: 900px){
+                        margin-right: 2.5rem;
+                    }
+                }
+    
+                p {
+                    font-size: 1.5rem;
+                    margin: 0;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

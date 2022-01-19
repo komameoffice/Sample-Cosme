@@ -1,0 +1,202 @@
+//
+// informationのスタイル
+//
+.information {
+    margin: 0 0 17rem 0;
+    @media (min-width: 460px) and (max-width: 900px) {
+        margin-bottom: 20rem;
+    }
+    @media (min-width: 901px) and (max-width: 2000px) {
+        margin-bottom: 25rem;
+    }
+    @media (min-width: 2001px) {
+        margin-bottom: 32rem;
+    }
+
+    .main-info, .product{
+        background-color: $white;
+        box-sizing: border-box;
+    }
+
+    .main-info {
+        padding: 5rem 0;
+        width: 100%;
+        position: relative;
+        @media (min-width: 460px) and (max-width: 900px) {
+            padding: 6rem 0;
+        }
+        @media (min-width: 901px) {
+            width: 90%;
+            padding: 10rem 0;
+            margin: 0 auto 0 0;
+        }
+
+        &:before {
+            content: "";
+            background: url("../images/point/natural-cleansing.svg") no-repeat;
+            position: absolute;
+            bottom: -20%;
+            right: 2%;
+            width: 22.8rem;
+            height: 14rem;
+            z-index: 10;
+            opacity: .7;
+            
+            @media (min-width: 460px) and (max-width: 900px) {
+                width: 27.5rem;
+                height: 16rem;
+                bottom: -25%;
+                right: 5%;
+            }
+            @media (min-width: 901px) {
+                width: 36rem;
+                height: 18rem;
+                bottom: -20%;
+                right: 50%;
+                left: 50%;
+                transform: translate(10%, 0);
+            }
+        }
+
+        .info-title {
+            @include flex(center, center, column);
+            width: 100%;
+
+            .summer {
+                font-size: 2rem;
+                line-height: 1;
+                position: relative;
+                margin: 0 0 .5rem 0;
+                transform: translate(-12rem, 0);
+                @media (min-width: 460px) {
+                    transform: translate(-15rem, 0);
+                }
+
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    bottom: -20%;
+                    left: -60%;
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    border: 1px solid $blue;
+                    border-radius: 50%;
+                    opacity: .2;
+                }
+            }
+
+            h2 {
+                text-align: center;
+                margin-bottom: 4.5rem;
+                line-height: 1.2;
+                font-size: 2.6rem;
+                font-weight: normal;
+                width: 100%;
+                @media (min-width: 460px) and (max-width: 900px) {
+                    font-size: 2.8rem;
+                    line-height: 1.4;
+                }
+                @media (min-width: 901px) {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .description {
+            @media (min-width: 460px) {
+                text-align: center;
+            }
+            @media (min-width: 901px) {
+                font-size: 1.8rem;
+            }
+    
+            p {
+                color: $gray;
+                font-size: 1.5rem
+            }
+
+            small {
+                display: inline-block;
+                color: $light-gray;
+                font-size: 1.3rem;
+                margin-top: 3rem;
+                @media (min-width: 901px) {
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+
+    .product {
+        margin: 1.5rem 0 0 auto;
+        padding: 3rem 0;
+        width: 95%;
+        text-align: left;
+        @media (min-width: 460px) and (max-width: 900px) {
+            margin: 2rem 0 0 auto;
+            padding: 5rem 0;
+        }
+        @media (min-width: 901px) {
+            width: 90%;
+            padding: 10rem 0;
+        }
+
+        .container {
+            @media (min-width: 460px) and (max-width: 900px) {
+                width: 75%;
+                max-width: 50rem;
+            }
+            @media (min-width: 901px) {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+            }
+
+            .product-list {
+                @include flex(flex-end, space-between, row);
+                font-size: 1.4rem;
+                width: 100%;
+                max-width: 500px;
+                @media (min-width: 460px) and (max-width: 900px) {
+                    font-size: 1.5rem;
+                }
+                @media (min-width: 901px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    font-size: 1.6rem;
+                    width: 50%;
+                    margin-right: 10rem;
+                }
+    
+                ul {
+                    @media (min-width: 901px) {
+                        margin-bottom: 5rem;
+                    }
+
+                    li {
+                        margin-bottom: .5rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+    
+            .online-store, .arrow {
+                font-size: 2.6rem;
+                color: $white;
+                @media (min-width: 901px) {
+                    max-width: 600px;
+                    height: 12rem;
+                    margin-top: 0;
+
+                    p {
+                        font-size: 3rem;
+                        line-height: 12rem;
+                    }
+                }
+            }
+        }
+    }
+}
